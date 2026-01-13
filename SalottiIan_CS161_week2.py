@@ -35,7 +35,7 @@ def extra_credit(num: int):
         new_num = bin(num % 256)[2:]
         if len(new_num) < 8:
             #adds leading 0's for positive numbers and formats number to look like binary
-            new_num = f"0b{'0 ' * (8 - len(new_num)) + new_num}"
+            new_num = f"0b{'0' * (8 - len(new_num)) + new_num}"
         print("The 2's complement binary for this number is:  " + new_num)
     else:
         print("Number is out of scope.")
@@ -43,3 +43,4 @@ def extra_credit(num: int):
 
 if __name__ == '__main__':
     main()
+
